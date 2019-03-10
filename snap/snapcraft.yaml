@@ -19,14 +19,35 @@ description: |
   This is not an official distribution of ccache, refer the [issue tracker](https://github.com/Lin-Buo-Ren/ccache-snap/issues)
   regarding to any issues regarding the use of this snap.
 
-base: core18
 adopt-info: ccache
+base: core18
+confinement: classic
 grade: devel
-confinement: devmode
 
 parts:
   ccache:
-    plugin: nil
+    source: https://github.com/ccache/ccache.git
+    source-depth: 100
+    override-pull:
+      snapcraftctl pull
+
+      snapcraftctl set-version "$(git describe --always --dirty --tags | sed 's/^v//')"
+
+    plugin: autotools
+    build-packages:
+    # For building documentation
+    - asciidoc
+    - xsltproc
+
+    - gperf
+    - zlib1g-dev
+
+  launchers:
+    source: snap/local/launchers
+
+    plugin: dump
+    organize:
+      '*': bin/
 
 apps:
   ccache:
@@ -34,3 +55,7 @@ apps:
     command: bin/ccache
     command-chain:
     - bin/ccache-launch
+
+#plugs:
+  #home:
+  #removable-media: # Non-autoconnect
