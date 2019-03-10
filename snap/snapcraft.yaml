@@ -1,17 +1,36 @@
-name: my-snap-name # you probably want to 'snapcraft register <name>'
-base: core18 # the base snap is the execution environment for this snap
-version: '0.1' # just for humans, typically '1.2+git' or '1.3.2'
-summary: Single-line elevator pitch for your amazing snap # 79 char long summary
+name: ccache-brlin # upstream preferred name request in progress
+title: ccache (UNOFFICIAL)
+summary: A fast C/C++ compiler cache
 description: |
-  This is my-snap's description. You have a paragraph or two to tell the
-  most important story about your snap. Keep it under 100 words though,
-  we live in tweetspace and your description wants to look good in the snap
-  store.
+  ccache is a compiler cache. It [speeds up recompilation](https://ccache.samba.org/performance.html)
+  by caching previous compilations and detecting when the same
+  compilation is being done again. Supported languages are C, C++,
+  Objective-C and Objective-C++.
 
-grade: devel # must be 'stable' to release into candidate/stable channels
-confinement: devmode # use 'strict' once you have the right plugs and slots
+  ## Features ##
+  - Keeps statistics on hits/misses.
+  - Automatic cache size management.
+  - Can cache compilations that generate warnings.
+  - Easy installation.
+  - Low overhead.
+  - Optionally uses hard links where possible to avoid copies.
+
+  ## NOTE ##
+  This is not an official distribution of ccache, refer the [issue tracker](https://github.com/Lin-Buo-Ren/ccache-snap/issues)
+  regarding to any issues regarding the use of this snap.
+
+base: core18
+adopt-info: ccache
+grade: devel
+confinement: devmode
 
 parts:
-  my-part:
-    # See 'snapcraft plugins'
+  ccache:
     plugin: nil
+
+apps:
+  ccache:
+    adapter: full
+    command: bin/ccache
+    command-chain:
+    - bin/ccache-launch
