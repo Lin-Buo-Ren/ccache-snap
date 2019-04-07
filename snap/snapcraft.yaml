@@ -2,7 +2,7 @@ name: ccache
 title: ccache (UNOFFICIAL)
 summary: A fast C/C++ compiler cache
 description: |
-  ccache is a compiler cache. It [speeds up recompilation](https://ccache.samba.org/performance.html)
+  ccache is a compiler cache. It [speeds up recompilation][1]
   by caching previous compilations and detecting when the same
   compilation is being done again. Supported languages are C, C++,
   Objective-C and Objective-C++.
@@ -16,8 +16,11 @@ description: |
   - Optionally uses hard links where possible to avoid copies.
 
   ## NOTE ##
-  This is not an official distribution of ccache, refer the [issue tracker](https://github.com/Lin-Buo-Ren/ccache-snap/issues)
+  This is not an official distribution of ccache, refer the [issue tracker][2]
   regarding to any issues regarding the use of this snap.
+
+  [1]: https://ccache.samba.org/performance.html
+  [2]: https://github.com/Lin-Buo-Ren/ccache-snap/issues
 
 adopt-info: ccache
 base: core18
