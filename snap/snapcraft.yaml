@@ -1,4 +1,4 @@
-name: ccache-brlin # upstream preferred name request in progress
+name: ccache
 title: ccache (UNOFFICIAL)
 summary: A fast C/C++ compiler cache
 description: |
