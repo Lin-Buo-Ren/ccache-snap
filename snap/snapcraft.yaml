@@ -50,7 +50,7 @@ parts:
       '*': bin/
 
 apps:
-  ccache-brlin:
+  ccache:
     adapter: full
     command: bin/ccache
     command-chain:
