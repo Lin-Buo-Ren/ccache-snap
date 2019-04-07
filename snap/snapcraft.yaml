@@ -7,7 +7,8 @@ description: |
   compilation is being done again. Supported languages are C, C++,
   Objective-C and Objective-C++.
 
-  ## Features ##
+  **Features**
+
   - Keeps statistics on hits/misses.
   - Automatic cache size management.
   - Can cache compilations that generate warnings.
@@ -15,7 +16,8 @@ description: |
   - Low overhead.
   - Optionally uses hard links where possible to avoid copies.
 
-  ## NOTE ##
+  **NOTE**
+
   This is not an official distribution of ccache, refer the [issue tracker][2]
   regarding to any issues regarding the use of this snap.
 
