@@ -24,6 +24,8 @@ description: |
   [1]: https://ccache.samba.org/performance.html
   [2]: https://github.com/Lin-Buo-Ren/ccache-snap/issues
 
+license: GPL-3.0+
+
 adopt-info: ccache
 base: core18
 confinement: classic
