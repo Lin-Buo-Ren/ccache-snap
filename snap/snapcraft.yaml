@@ -29,7 +29,7 @@ license: GPL-3.0+
 adopt-info: ccache
 base: core18
 confinement: classic
-grade: devel
+grade: stable
 
 parts:
   ccache:
