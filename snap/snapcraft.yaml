@@ -1,5 +1,5 @@
 name: ccache
-title: ccache (UNOFFICIAL)
+title: ccache — Compiler cache (UNOFFICIAL)
 summary: A fast C/C++ compiler cache
 description: |
   ccache is a compiler cache. It [speeds up recompilation][1]
