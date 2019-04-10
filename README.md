@@ -1,8 +1,6 @@
 # Unofficial Snap Packaging for ccache
 This is the unofficial snap packaging for [ccache](https://ccache.samba.org/), [Snaps are universal Linux packages](https://snapcraft.io).
 
-Refer [snap/README.md](snap/README.md) for user-oriented information.
-
 ## Remaining Tasks
 Snapcrafters ([join us](https://forum.snapcraft.io/t/join-snapcrafters/1325)) are working to land snap install documentation and the [snapcraft.yaml](https://github.com/Lin-Buo-Ren/snapcrafters-template-plus/blob/master/snap/snapcraft.yaml) upstream so [Project] can authoritatively publish future releases.
 
