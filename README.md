@@ -21,9 +21,9 @@ Snapcrafters ([join us](https://forum.snapcraft.io/t/join-snapcrafters/1325)) ar
 - [x] Convert the snap to `strict` confinement, or `classic` confinement if it qualifies
 - [x] Publish the snap in the Snap Store beta channel
 - [ ] (skipped, fast-tracking)Update the install instructions in `snap/README.md`
-- [ ] Post a call for testing on the [Snapcraft Forum](https://forum.snapcraft.io) - [template](https://github.com/Lin-Buo-Ren/snapcrafters-template-plus/wiki/Call-for-Testing-Template) - [link]()
-- [ ] Publish the snap in the Snap Store stable channel
-- [ ] Update the install instructions in `snap/README.md`
+- [x] Post a call for testing on the [Snapcraft Forum](https://forum.snapcraft.io) - [template](https://github.com/Lin-Buo-Ren/snapcrafters-template-plus/wiki/Call-for-Testing-Template) - [link](https://forum.snapcraft.io/t/call-for-testing-the-unofficial-ccache-snap/10862)
+- [x] Publish the snap in the Snap Store stable channel
+- [ ] (skipped, fast-tracking)Update the install instructions in `snap/README.md`
 - [ ] Post an announcement in the [Snapcraft Forum](https://forum.snapcraft.io) - [template](https://github.com/Lin-Buo-Ren/snapcrafters-template-plus/wiki/Release-Announcement-Template) - [link]()
 - [ ] Submit a pull request or patch upstream that adds the `snapcraft.yaml` and any required assets/launchers - [example](https://github.com/htacg/tidy-html5/pull/749) - [link]()
 - [ ] Submit a pull request or patch upstream that adds snap install documentation - [example](https://github.com/htacg/html-tidy.org/pull/11) - [link]()
