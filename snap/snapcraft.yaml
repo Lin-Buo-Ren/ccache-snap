@@ -21,7 +21,7 @@ description: |
   This is not an official distribution of ccache, refer the [issue tracker][2]
   regarding to any issues regarding the use of this snap.
 
-  [1]: https://ccache.samba.org/performance.html
+  [1]: https://ccache.dev/performance.html
   [2]: https://github.com/Lin-Buo-Ren/ccache-snap/issues
 
 license: GPL-3.0+
